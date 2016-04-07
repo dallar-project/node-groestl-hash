@@ -1,7 +1,7 @@
 node-groestl-hash
 ===============
 
-Groestl hashing function for node.js
+Double groestl hashing function for node.js
 
 Usage
 -----
