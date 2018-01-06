@@ -1,4 +1,4 @@
-#include "groestl.h"
+#include "throestl.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
@@ -6,10 +6,11 @@
 
 #include "sha3/sph_groestl.h"
 
-void groestl_hash(const char* input, char* output, uint32_t len)
+void throestl_hash(const char* input, char* output, uint32_t len)
 {
     char hash1[64];
     char hash2[64];
+    char hash3[64];
     
     sph_groestl512_context ctx_groestl;
     sph_groestl512_init(&ctx_groestl);
@@ -18,6 +19,9 @@ void groestl_hash(const char* input, char* output, uint32_t len)
     
     sph_groestl512(&ctx_groestl, hash1, 64);
     sph_groestl512_close(&ctx_groestl, &hash2);
+
+    sph_groestl512(&ctx_groestl, hash2, 64);
+    sph_groestl512_close(&ctx_groestl, &hash3);
     
-    memcpy(output, &hash2, 32);
+    memcpy(output, &hash3, 32);
 }

@@ -1,1 +1,1 @@
-module.exports = require('bindings')('groestlhash.node')
+module.exports = require('bindings')('throestlhash.node')

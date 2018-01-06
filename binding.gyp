@@ -1,12 +1,12 @@
 {
     "targets": [
         {
-            "target_name": "groestlhash",
+            "target_name": "throestlhash",
             "sources": [
-                "groestlhash.cc",
+                "throestlhash.cc",
                 "sha3/groestl.c",
-                "groestl.h",
-                "groestl.c",
+                "throestl.h",
+                "throestl.c",
             ],
             "include_dirs" : [
                 "<!(node -e \"require('nan')\")"

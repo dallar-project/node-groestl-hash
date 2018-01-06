@@ -1,7 +1,7 @@
-node-groestl-hash
+node-throestl-hash
 ===============
 
-Double groestl hashing function for node.js
+Triple groestl hashing function for node.js
 
 Usage
 -----

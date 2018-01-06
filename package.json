@@ -1,7 +1,7 @@
 {
-    "name": "node-groestl-hash",
+    "name": "node-throestl-hash",
     "version": "0.0.1",
-    "main": "groestlhash",
+    "main": "throestlhash",
     "scripts": {
         "test": "node test/test.js"
     },
@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/UdjinM6/node-groestl-hash.git"
+        "url": "https://github.com/dallar-project/node-groestl-hash.git"
     },
-    "dependencies" : {
-        "bindings" : "*",
-        "nan" : "*"
+    "dependencies": {
+        "bindings": "*",
+        "nan": "*"
     },
     "keywords": [
-        "groestl",
-        "groestlcoin",
+        "throestl",
+        "throestlcoin",
         "hash",
         "crypto",
         "cryptocurrency"

@@ -1,7 +1,7 @@
 #include <nan.h>
 
 extern "C" {
-    #include "groestl.h"
+    #include "throestl.h"
 }
 
 NAN_METHOD(digest) {
@@ -21,7 +21,7 @@ NAN_METHOD(digest) {
     uint32_t input_len = node::Buffer::Length(target);
     char * output = new char[32];
 
-    groestl_hash(input, output, input_len);
+    throestl_hash(input, output, input_len);
 
     Nan::MaybeLocal<v8::Object> buffer = Nan::CopyBuffer(output, 32);
 
@@ -33,4 +33,4 @@ NAN_MODULE_INIT(init) {
     NAN_EXPORT(target, digest);
 }
 
-NODE_MODULE(groestlhash, init)
+NODE_MODULE(throestlhash, init)
