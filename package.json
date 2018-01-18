@@ -14,7 +14,7 @@
         "url": "https://github.com/dallar-project/node-groestl-hash.git"
     },
     "dependencies": {
-        "bindings": "*",
+        "bindings": "=1.2.1",
         "nan": "*"
     },
     "keywords": [
